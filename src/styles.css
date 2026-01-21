@@ -1,0 +1,16 @@
+:root {
+    /* Kolory główne */
+    --color-primary: #166534;
+    --color-primary-light: #80c572;
+    --color-primary-dark: #223a2d;
+  
+    /* Szarości */
+    --color-bg: #f3f4f6;
+    --color-card: #ffffff;
+    --color-border: #e5e7eb;
+    --color-text-muted: #6b7280;
+  
+    /* Tekst */
+    --color-text: #111827;
+    --color-white: #ffffff;
+  }/* You can add global styles to this file, and also import other style files */

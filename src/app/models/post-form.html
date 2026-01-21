@@ -1,0 +1,35 @@
+<div *ngIf="isAdmin$ | async; else accessDenied">
+  <button (click)="logout()">Wyloguj admina</button>
+  <hr>
+  
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" name="title" [(ngModel)]="post.title" placeholder="Tytuł" required>
+    <br/>
+    <textarea name="content" [(ngModel)]="post.content" placeholder="Treść" required></textarea>
+    <button type="submit">Opublikuj jako administrator</button>
+  </form>
+</div>
+
+<ng-template #accessDenied>
+  <div class="error-box">
+    <h3>Brak uprawnień</h3>
+    <p>Musisz być zalogowany jako administrator, aby dodawać wpisy.</p>
+    <button routerLink="/login">Przejdź do logowania</button>
+  </div>
+</ng-template>
+
+<hr>
+
+<div class="posts-container">
+  <h2>Wszystkie wpisy</h2>
+  
+  <div *ngFor="let p of posts$ | async" class="post-card">
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.content }}</p>
+    <small>Data publikacji: {{ p.date | date:'short' }}</small>
+    
+    <button *ngIf="isAdmin$ | async" (click)="deletePost(p.id)" class="delete-btn">
+      Usuń wpis
+    </button>
+  </div>
+</div>

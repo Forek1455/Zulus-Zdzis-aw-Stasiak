@@ -1,0 +1,65 @@
+/* informacje-prawne.css */
+
+.privacy-policy {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--color-card); /* Białe tło karty */
+  border: 1px solid var(--color-border); /* Jasnoszara ramka */
+  border-radius: 12px;
+  line-height: 1.7;
+  color: var(--color-text); /* Ciemny tekst */
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy h1 {
+  color: var(--color-primary-dark); /* Bardzo ciemna zieleń */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--color-primary-light); /* Jasnozielony akcent */
+  padding-bottom: 10px;
+}
+
+.privacy-policy h2 {
+  color: var(--color-primary); /* Główna zieleń */
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-policy p {
+  margin-bottom: 1rem;
+}
+
+.privacy-policy ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-policy li {
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.privacy-policy strong {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* Styl dla tekstu pomocniczego / muted */
+.privacy-policy .legal-note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+/* Responsywność dla urządzeń mobilnych */
+@media (max-width: 640px) {
+  .privacy-policy {
+    margin: 20px;
+    padding: 20px;
+  }
+}

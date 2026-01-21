@@ -1,0 +1,36 @@
+html
+{
+    text-align: center;
+}
+.posts-container {
+    margin-top: 30px;
+  }
+  
+  .post-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-card h3 {
+    color: var(--color-primary-dark);
+    margin-top: 0;
+  }
+  
+  .delete-btn {
+    background-color: #ef4444; /* Czerwony dla usuwania */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

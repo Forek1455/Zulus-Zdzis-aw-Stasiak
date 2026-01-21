@@ -1,0 +1,56 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom text-white">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#" id="mainTittle">Zulus Zdzisław Stasiak </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" id="navTextColor" href="#about">O nas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" id="navTextColor" href="#services">Oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" id="navTextColor" href="#contact">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" id="navTextColor" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<router-outlet></router-outlet>
+<!-- Footer -->
+<footer>
+  <h4 style="padding-left:35px;padding-top: 35px;">Dane Kontaktowe</h4>
+    <div class="contact-icons-container">
+      <div class="dane-kontaktowe">
+      <h5>Siedziba Firmy</h5>
+      <p class="contact-icons-footer bi bi-geo-alt mb-0"> ul. Matejki 39
+        62-530 Posada</p> 
+      <p class="contact-icons-footer mb-0" style="margin-left: 15px;"> woj. wielkopolskie</p>  
+      <p class="contact-icons-footer bi bi-envelope mb-0"> zulus1@onet.eu</p>
+      <p class="contact-icons-footer bi bi-telephone mb-0"> 601 750 498</p>
+    </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    <p class="contact-icons-footer mb-0"style="padding-left:35px;padding-top: 35px;" > ZULUS Zdzisław Stasiak | NIP: 6651137074</p>
+    <div class="informacje-wymagane">
+    <a routerLink="/informacje-prawne" (click)="scrollToTop()"><p>Polityka prywatności</p></a>
+    <a routerLink="/dotacje-unijne" (click)="scrollToTop()">Informacja o wsparciu unijnym</a>
+    <p>&copy; ZULUS Zdzisław Stasiak. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</footer>
+<a routerLink="/dotacje-unijne" (click)="scrollToTop()"><img id="dotacje-unijne" src="e9f3f92c-12db-4b1d-8aaa-994035d5fce6.png" alt="dotacje-unijne"></a>

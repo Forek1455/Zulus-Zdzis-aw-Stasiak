@@ -1,0 +1,285 @@
+/* styles.css */
+:root {
+    /* Kolory główne */
+    --color-primary: #166534;
+    --color-primary-light: #80c572;
+    --color-primary-dark: #0f3f22;
+    --color-bg-grey: #4B5563;
+  /*7BE067*/
+    /* Szarości */
+    --color-bg: #f3f4f6;
+    --color-card: #ffffff;
+    --color-border: #e5e7eb;
+    --color-text-muted: #6b7280;
+  
+    /* Tekst */
+    --color-text: #111827;
+    --color-white: #ffffff;
+  }/* You can add global styles to this file, and also import other style files */
+  
+  
+  body {
+      background-color: var(--color-primary-light); /* jasne tło podobne do $gray-100 */
+      color: var(--color-text); /* ciemny tekst dla kontrastu */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar-custom {
+      background-color: var(--color-white); /* $purple-800 */
+      color: var(--color-primary);
+  
+      min-height: 9vh; /* 80% wysokości okna przeglądarki */
+  
+    }
+    #mainTittle
+    {
+      color: var(--color-primary-dark);
+      font-size:xx-large;
+    }
+    #navTextColor
+    {
+      color: var(--color-text);
+      font-size:larger;
+    }
+    #navTextColor:hover
+    {
+      color: var(--color-primary-light);
+    }
+    
+    footer {
+      background-color: var(--color-primary-dark);;
+      color: var(--color-white);
+      padding: 20px 0;
+      text-align: center;
+    }
+    .header {
+      background-image: url('/background-bhp-4.png');
+      background-size:100%;
+      background-position:center bottom;
+      background-repeat: no-repeat;
+  
+      padding: 25px;
+      /*color: var(--color-bg-grey);*/
+      /*color: white;*/
+      color:  var(--color-border);
+  
+  
+  
+      min-height: 45vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+      text-align: left;
+    }
+  /*Tablet*/
+    @media(min-width: 768px) and (max-width: 1024px){
+      .header {
+      background-image: url('/background-bhp-4.png');
+      background-size:auto 100%;
+      background-position:center bottom;
+      background-repeat: no-repeat;
+      }}
+  /*Telefon*/
+    @media (max-width: 767px) {
+      .header {
+      background-image: url('/background-bhp-4.png');
+      background-size:auto 100%;
+      background-position:center bottom;
+      background-repeat: no-repeat;
+       }  
+      #about
+      {
+        padding: 25px;
+      }
+      #services
+      {
+        padding: 25px;
+      }
+      #contact
+      {
+        padding: 25px;
+      }
+      #faq
+      {
+        padding: 25px;
+      }
+       .button1{
+        width: 40%;
+  
+       }
+       .button2
+       {
+        width: 45%;
+       }
+       .headerButtonsContainer
+       {
+          padding: 0px;
+       }
+    }
+    .shadowBox
+    {
+      text-shadow:1px 1px 0.25  px #292b30;
+  
+    }
+    #buttonSubmit
+    {
+      width: 150px;
+    }
+    .bi
+    {
+      color: var(--color-card);
+      font-size: 1.5rem;
+    }
+  
+  
+    h3{
+      text-decoration: var(--color-primary-light) underline;
+    
+    }
+    h2{
+      text-decoration: var(--color-primary-light) underline;
+    
+    }
+    h4{
+      text-decoration: var(--color-primary-light) underline;
+    }
+    .card-body {
+      position: relative;
+      text-align: center;
+      color: var(--color-white);
+      /*background-color: var(--color-primary-dark);*/
+      background-image: url("/backgroundGreen.jpg"); /* ustawienie obrazka tła */
+    background-size: cover;   /* dopasowanie obrazka do całego ekranu */
+    background-repeat: no-repeat; /* brak powtarzania obrazka */
+    background-position: center;  /* wyśrodkowanie obrazka */
+      overflow: hidden;
+      transition: color 0.4s ease;
+    }
+    
+    /* overlay animacji */
+    .card-body {
+      position: relative;
+      text-align: center;
+      color: var(--color-white);
+      background-color: var(--color-primary-dark);
+      overflow: hidden;
+      transition: color 0.4s ease;
+      border-radius: 10px;
+
+    }
+    
+    /* overlay zjeżdżający z góry */
+    .card-body::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-primary-light);
+      transition: top 0.4s ease;
+      z-index: 0;
+    }
+    
+    /* hover */
+    .card-body:hover::after {
+      top: 0;
+    }
+    
+    .card-body:hover .bi{
+      color: var(--color-text);
+    }
+    .card-body:hover{
+      color: var(--color-text);
+    }
+    
+    /* treść zawsze na wierzchu */
+    .card-body > * {
+      position: relative;
+      z-index: 1;
+    }
+    
+  
+  
+  
+  
+  
+    .button1
+    {
+      background-color: var(--color-primary-dark);
+      color: var(--color-border);
+  
+    }
+    .button1:hover
+    {
+      color: var(--color-primary-light);
+      background-color: #ffffff00;
+      border: 1px solid var(--color-primary-light);
+    }
+  
+  
+   .button2
+   {
+    background-color: #242424;
+    color:var(--color-border)
+  
+   }
+   .button2:hover
+   {
+    color: var(--color-primary-light);
+    background-color: #ffffff00;
+    border: 1px solid var(--color-primary-light);
+   }
+  
+   .faq a {
+    color: var(--color-text)  ;
+    font-weight: 500;
+  }
+  
+  .faq a:hover {
+    color: var(--color-primary-light);
+  }
+  .contact-icons{
+    color: var(--color-text);
+  }
+  .contact-icons:hover{
+    color: var(--color-primary)  ;
+  }
+  .contact-icons-footer
+  {
+    font-size:large;
+    color: var(--color-border);
+  }
+  .contact-icons-footer:hover{
+    color: var(--color-primary-light);
+  
+  }
+  .contact-icons-container
+  {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    float: left;
+  }
+  /* Stylizacja paska przewijania */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+
+/* Zapewnia płynne przewijanie na urządzeniach mobilnych */
+.overflow-x-auto {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+

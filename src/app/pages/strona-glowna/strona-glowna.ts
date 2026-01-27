@@ -57,10 +57,6 @@ export class StronaGlowna implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('ZULUS Zdzisław Stasiak - Posada, Konin | Usługi');
-    this.metaService.updateTag({
-      name: 'description',
-      content: 'ZULUS Zdzisław Stasiak - usługi na terenie powiatu konińskiego.'
-    });
+
   }
 }

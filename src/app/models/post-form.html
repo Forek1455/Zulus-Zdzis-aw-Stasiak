@@ -1,13 +1,15 @@
 <div *ngIf="isAdmin$ | async; else accessDenied">
   <button (click)="logout()">Wyloguj admina</button>
   <hr>
-  
+  <div class="form">
   <form (ngSubmit)="onSubmit()">
-    <input type="text" name="title" [(ngModel)]="post.title" placeholder="Tytuł" required>
+    <input type="text" name="title" [(ngModel)]="post.title" placeholder="Tytuł" required width="150px">
     <br/>
-    <textarea name="content" [(ngModel)]="post.content" placeholder="Treść" required></textarea>
+    <textarea name="content" [(ngModel)]="post.content" placeholder="Treść" required style="width: 500px; height: 500px;"></textarea>
+    <br/>
     <button type="submit">Opublikuj jako administrator</button>
   </form>
+</div>
 </div>
 
 <ng-template #accessDenied>

@@ -1,59 +1,66 @@
 # Zulus
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+Ten projekt został wygenerowany przy użyciu [Angular CLI](https://github.com/angular/angular-cli) w wersji 21.0.2.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🇵🇱 Dokumentacja po polsku
 
-```bash
-ng serve
-```
+### O projekcie
+Strona została stworzona dla firmy **Zulus**, która świadczy szeroki wachlarz usług, w tym:
+* **BHP**: Kompleksowe usługi z zakresu bezpieczeństwa i higieny pracy.
+* **Detailing pojazdów**: Profesjonalna pielęgnacja i renowacja samochodów.
+* **Sprzątanie**: Usługi utrzymania czystości.
+* **Tereny zielone**: Projektowanie i pielęgnacja ogrodów oraz obszarów zielonych.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Hosting i Backend
+Projekt wykorzystuje infrastrukturę **Firebase**:
+* **Firebase Hosting**: Serwowanie aplikacji Angularowej.
+* **Cloud Firestore**: NoSQL-owa baza danych przechowująca posty firmowe i aktualności.
+* **Firebase Authentication**: System logowania dla administratora strony (zarządzanie treścią).
 
-## Code scaffolding
+### Funkcjonalności
+* **System Postów**: Możliwość dodawania i edycji treści (np. portfolio realizacji) bezpośrednio z poziomu strony.
+* **Logowanie**: Zabezpieczony proces autentykacji po stronie klienta.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Komendy deweloperskie
+* `ng serve`: Uruchamia serwer lokalny (`http://localhost:4200/`).
+* `ng build`: Kompiluje projekt do folderu produkcyjnego `dist/`.
+* `firebase deploy`: Publikacja najnowszej wersji aplikacji na serwerze Firebase.
 
+---
+
+## 🇬🇧 English Documentation
+
+### About the Project
+This website was developed for **Zulus**, a multi-service company specializing in:
+* **Health and Safety (BHP)**: Comprehensive occupational health and safety services.
+* **Vehicle Detailing**: Professional car care and restoration.
+* **Cleaning Services**: General maintenance and cleaning solutions.
+* **Green Spaces**: Management and maintenance of gardens and landscape areas.
+
+### Hosting & Backend
+The project is powered by **Firebase**:
+* **Firebase Hosting**: For delivering the Angular application.
+* **Cloud Firestore**: A NoSQL database for storing company posts and updates.
+* **Firebase Authentication**: Secure login system for site administration and content management.
+
+### Features
+* **Post System**: Allows for adding and managing content (e.g., service portfolios) directly on the site.
+* **Authentication**: Restricted access to the management dashboard.
+
+### Development Commands
+* `ng serve`: Starts the local development server (`http://localhost:4200/`).
+* `ng build`: Compiles the project into the `dist/` directory.
+* `firebase deploy`: Deploys the application to the live production environment.
+
+---
+
+## Technical Details (Common)
+
+### Code scaffolding
+To generate a new component, run:
 ```bash
 ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Adres stony: https://zulus-62570.web.app

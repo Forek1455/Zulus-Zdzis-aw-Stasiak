@@ -1,6 +1,12 @@
-html
-{
-    text-align: center;
+.form {
+  height: 100%;
+  margin: 0 auto  ;
+}
+
+.form {
+  display: flex;
+  justify-content: center; /* poziomo */
+  align-items: center;     /* pionowo */
 }
 .posts-container {
     margin-top: 30px;

@@ -19,4 +19,11 @@ export class App {
       behavior: 'smooth'
     });
   }
+ngOnInit() {
+  const host = window.location.hostname;
+  
+  if (host !== 'zulus-uslugi-konin.eu' && host !== 'localhost' && host !== '127.0.0.1') {
+    window.location.replace('https://zulus-uslugi-konin.eu' + window.location.pathname);
+  }
+}
 }

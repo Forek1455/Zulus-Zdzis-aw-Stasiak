@@ -26,7 +26,7 @@ export class LoginComponent {
     try {
       await signInWithEmailAndPassword(this.auth, this.email, this.password);
       alert('Zalogowano pomyślnie!');
-      this.router.navigate(['/dodaj-wpis']); // Przekierowanie do formularza
+      this.router.navigate(['/dodaj-wpis']); 
     } catch (error) {
       console.error('Błąd logowania:', error);
       alert('Niepoprawne dane logowania');

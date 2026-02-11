@@ -63,4 +63,4 @@ To generate a new component, run:
 ```bash
 ng generate component component-name
 
-## Adres stony: https://zulus-62570.web.app
+## Adres stony: https://zulus-uslugi-konin.eu
